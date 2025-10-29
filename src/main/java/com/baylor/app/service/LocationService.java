@@ -1,0 +1,46 @@
+package com.baylor.app.service;
+
+import com.baylor.app.model.Location;
+import com.baylor.app.repository.LocationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class LocationService {
+
+    @Autowired
+    private LocationRepository locationRepository;
+
+    public Location getLocation(String locationId) {
+        Optional<Location> location = locationRepository.findById(locationId);
+        return location.orElseThrow(() -> new IllegalArgumentException("Location Not Found"));
+    }
+
+    public Location updateLocation(String locationId, Location location) {
+        Location locationToUpdate = getLocation(locationId);
+
+        locationToUpdate.setRoom(location.getRoom());
+        locationToUpdate.setShelf(location.getShelf());
+        locationToUpdate.setContainer(location.getContainer());
+        locationRepository.save(locationToUpdate);
+
+        return locationToUpdate;
+    }
+
+    public Location createLocation(Location location) {
+        locationRepository.save(location);
+
+        return location;
+    }
+
+    public String deleteLocation(String locationId) {
+        String responseMessage = null;
+        locationRepository.deleteById(locationId);
+        responseMessage = String.format("Vendor: %s Deleted Successfully", locationId);
+        return responseMessage;
+    }
+
+}

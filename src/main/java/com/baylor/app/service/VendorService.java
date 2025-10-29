@@ -1,0 +1,52 @@
+package com.baylor.app.service;
+
+import com.baylor.app.model.Vendor;
+import com.baylor.app.repository.VendorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class VendorService {
+
+    @Autowired
+    private VendorRepository vendorRepository;
+
+    public Vendor getVendor(String vendorId) {
+        Optional<Vendor> vendor = vendorRepository.findById(vendorId);
+        return vendor.orElseThrow(() -> new IllegalArgumentException("Vendor Not Found"));
+    }
+
+    public List<Vendor> getVendorByName(String name) {
+        return vendorRepository.findByName(name);
+
+    }
+
+    public Vendor updateVendor(String vendorId, Vendor vendor) {
+        Vendor vendorToUpdate = getVendor(vendorId);
+
+        vendorToUpdate.setName(vendor.getName());
+        vendorToUpdate.setEmail(vendor.getEmail());
+        vendorToUpdate.setPhoneNumber(vendor.getPhoneNumber());
+        vendorToUpdate.setAddress(vendor.getAddress());
+        vendorRepository.save(vendorToUpdate);
+
+        return vendorToUpdate;
+    }
+
+    public Vendor createVendor(Vendor vendor) {
+        vendorRepository.save(vendor);
+
+        return vendor;
+    }
+
+    public String deleteVendor(String vendorId) {
+        String responseMessage = null;
+        vendorRepository.deleteById(vendorId);
+        responseMessage = String.format("Vendor: %s Deleted Successfully", vendorId);
+        return responseMessage;
+    }
+
+}
