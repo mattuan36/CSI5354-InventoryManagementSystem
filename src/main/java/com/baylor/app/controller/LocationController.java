@@ -24,7 +24,7 @@ public class LocationController {
     }
 
     // method for demonstrating the composite pattern.
-    @RequestMapping(value = "/{locationId}/items}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{locationId}/items", method = RequestMethod.GET)
     public ResponseEntity<List<Item>> getItemsByLocation(@PathVariable("locationId") String locationId) {
         Location location = locationService.getLocation(locationId);
         return new ResponseEntity<>(locationService.getItemsByLocation(location), HttpStatus.OK);

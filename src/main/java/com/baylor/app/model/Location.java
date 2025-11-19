@@ -20,7 +20,8 @@ public class Location implements Component {
     private Long id;
     private String description;
 
-    private List<Component> children;
+    @Transient
+    private List<Component> children = new ArrayList<>();
 
     public void add(Component c) { children.add(c); }
     public void remove(Component c) { children.remove(c); }
