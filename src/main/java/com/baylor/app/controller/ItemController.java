@@ -1,7 +1,9 @@
 package com.baylor.app.controller;
 
 import com.baylor.app.model.Item;
+import com.baylor.app.model.Location;
 import com.baylor.app.service.ItemService;
+import com.baylor.app.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
