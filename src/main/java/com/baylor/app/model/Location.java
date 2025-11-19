@@ -22,6 +22,9 @@ public class Location implements Component {
 
     private List<Component> children;
 
+    public void add(Component c) { children.add(c); }
+    public void remove(Component c) { children.remove(c); }
+
     @Override
     public List<Item> getItems() {
         List<Item> items = new ArrayList<>();
