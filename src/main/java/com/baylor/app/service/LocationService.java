@@ -28,9 +28,7 @@ public class LocationService {
     public Location updateLocation(String locationId, Location location) {
         Location locationToUpdate = getLocation(locationId);
 
-        locationToUpdate.setRoom(location.getRoom());
-        locationToUpdate.setShelf(location.getShelf());
-        locationToUpdate.setContainer(location.getContainer());
+        locationToUpdate.setDescription(location.getDescription());
         locationRepository.save(locationToUpdate);
 
         return locationToUpdate;

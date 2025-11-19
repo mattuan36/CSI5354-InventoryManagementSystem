@@ -22,7 +22,6 @@ public class ItemService {
 
     public List<Item> getItemByName(String name) {
         return itemRepository.findByName(name);
-
     }
 
     public Item updateItem(String itemId, Item item) {

@@ -15,7 +15,5 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long room;
-    private Long shelf;
-    private Long container;
+    private String description;
 }
