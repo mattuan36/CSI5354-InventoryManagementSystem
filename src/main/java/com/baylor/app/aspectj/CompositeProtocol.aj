@@ -2,6 +2,9 @@ package com.baylor.app.aspectj;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.baylor.app.model.Item;
+import com.baylor.app.model.Location;
+import com.baylor.app.service.LocationService
 
 public aspect CompositeProtocol {
 
@@ -27,6 +30,7 @@ public aspect CompositeProtocol {
 
     public List<Item> Leaf.getItems() {
         return List.of((Item)(Object)this);
+        return List.of((Item) this);
     }
 
     public List<Item> Composite.getItems() {
@@ -39,7 +43,7 @@ public aspect CompositeProtocol {
 
     // the pointcut to be replaced and the logic to be used
     pointcut execute(Location location) :
-        execution(List com.baylor.app.service.LocationService.getItemsByLocation(com.baylor.app.model.Location))
+        execution(List LocationService.getItemsByLocation(Location))
         && args(location);
 
     List<Item> around(Location location) : execute(location) {
