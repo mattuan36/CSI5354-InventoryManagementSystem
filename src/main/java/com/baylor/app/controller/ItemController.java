@@ -29,11 +29,6 @@ public class ItemController {
         return new ResponseEntity<>(item, HttpStatus.OK);
     }
 
-    // method for demonstrating the composite pattern.
-    public ResponseEntity<List<Item>> getItemsByLocation(Location location) {
-        return new ResponseEntity<>(itemService.getItemsByLocation(location), HttpStatus.OK);
-    }
-
     @PutMapping(value="/{itemId}")
     public ResponseEntity<Item> updateItem(@PathVariable("itemId") String itemId, @RequestBody Item item) {
         return new ResponseEntity<>(itemService.updateItem(itemId, item), HttpStatus.OK);

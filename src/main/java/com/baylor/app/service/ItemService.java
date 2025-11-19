@@ -24,11 +24,6 @@ public class ItemService {
         return itemRepository.findByName(name);
     }
 
-    // method that uses the composite pattern to return all items in a given location.
-    public List<Item> getItemsByLocation(Location location) {
-        return location.getItems();
-    }
-
     public Item updateItem(String itemId, Item item) {
         Item itemToUpdate = getItem(itemId);
 

@@ -1,5 +1,6 @@
 package com.baylor.app.service;
 
+import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
 import com.baylor.app.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,11 @@ public class LocationService {
     public Location getLocation(String locationId) {
         Optional<Location> location = locationRepository.findById(locationId);
         return location.orElseThrow(() -> new IllegalArgumentException("Location Not Found"));
+    }
+
+    // method that uses the composite pattern to return all items in a given location.
+    public List<Item> getItemsByLocation(Location location) {
+        return location.getItems();
     }
 
     public Location updateLocation(String locationId, Location location) {
