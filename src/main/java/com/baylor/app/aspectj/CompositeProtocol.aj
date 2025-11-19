@@ -17,11 +17,12 @@ public aspect CompositeProtocol {
     // store children hierarchy
     private List<Component> Composite.children = new ArrayList<>();
 
-    // necessary Composite methods
+    // Composite base methods
     public void Composite.add(Component c) { children.add(c); }
     public void Composite.remove(Component c) { children.remove(c); }
     public List<Component> Composite.getChildren() { return children; }
 
+    // shared composite logic method and implementations
     public abstract List<Item> Component.getItems();
 
     public List<Item> Leaf.getItems() {
@@ -34,5 +35,15 @@ public aspect CompositeProtocol {
             items.addAll(c.getItems());
         }
         return items;
+    }
+
+    // the pointcut to be replaced and the logic to be used
+    pointcut execute(Location location) :
+        execution(List com.baylor.app.service.LocationService.getItemsByLocation(com.baylor.app.model.Location))
+        && args(location);
+
+    List<Item> around(Location location) : execute(location) {
+        Component root = (Component) location;
+        return root.getItems();
     }
 }
