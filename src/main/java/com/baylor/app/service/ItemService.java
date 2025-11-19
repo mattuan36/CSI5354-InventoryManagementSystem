@@ -1,6 +1,7 @@
 package com.baylor.app.service;
 
 import com.baylor.app.model.Item;
+import com.baylor.app.model.Location;
 import com.baylor.app.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,11 @@ public class ItemService {
 
     public List<Item> getItemByName(String name) {
         return itemRepository.findByName(name);
+    }
 
+    // method that uses the composite pattern to return all items in a given location.
+    public List<Item> getItemsByLocation(Location location) {
+        return location.getItems();
     }
 
     public Item updateItem(String itemId, Item item) {

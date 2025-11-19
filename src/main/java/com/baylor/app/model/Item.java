@@ -30,7 +30,7 @@ public class Item implements Component {
     private Location location;
 
     @Override
-    public List<Item> get_items_by_location() {
+    public List<Item> getItems() {
         return List.of(this);
     }
 }

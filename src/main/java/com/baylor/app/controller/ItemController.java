@@ -1,6 +1,7 @@
 package com.baylor.app.controller;
 
 import com.baylor.app.model.Item;
+import com.baylor.app.model.Location;
 import com.baylor.app.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,6 +27,11 @@ public class ItemController {
     public ResponseEntity<List<Item>> getItemByName(@PathVariable("name") String name) {
         List<Item> item = itemService.getItemByName(name);
         return new ResponseEntity<>(item, HttpStatus.OK);
+    }
+
+    // method for demonstrating the composite pattern.
+    public ResponseEntity<List<Item>> getItemsByLocation(Location location) {
+        return new ResponseEntity<>(itemService.getItemsByLocation(location), HttpStatus.OK);
     }
 
     @PutMapping(value="/{itemId}")

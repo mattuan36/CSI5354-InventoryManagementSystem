@@ -23,10 +23,10 @@ public class Location implements Component {
     private List<Component> children;
 
     @Override
-    public List<Item> get_items_by_location() {
+    public List<Item> getItems() {
         List<Item> items = new ArrayList<>();
         for (Component component : children) {
-            items.addAll(component.get_items_by_location());
+            items.addAll(component.getItems());
         }
         return items;
     }
