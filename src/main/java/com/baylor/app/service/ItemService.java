@@ -3,6 +3,7 @@ package com.baylor.app.service;
 import com.baylor.app.mediator.Comp;
 import com.baylor.app.mediator.Mediator;
 import com.baylor.app.model.Item;
+import com.baylor.app.model.Location;
 import com.baylor.app.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +34,6 @@ public class ItemService implements Comp{
 
     public List<Item> getItemByName(String name) {
         return itemRepository.findByName(name);
-
     }
 
     public List<Item> getAllItems() {

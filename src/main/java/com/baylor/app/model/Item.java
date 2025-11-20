@@ -6,12 +6,14 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
 @Entity
 @Table(name = "item")
-public class Item {
+public class Item implements Component {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +30,10 @@ public class Item {
     @JoinColumn(name = "location_id")
     private Location location;
 
+    @Override
+    public List<Item> getItems() {
+        return List.of(this);
+    }
     @ManyToOne
     @JoinColumn(name = "vendor_id")
     private Vendor vendor;
