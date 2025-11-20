@@ -1,0 +1,294 @@
+2025-11-04T18:58:44.388-06:00  INFO 5904 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 24.0.2 with PID 5904 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-04T18:58:44.390-06:00  INFO 5904 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-04T18:58:45.040-06:00  INFO 5904 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-04T18:58:45.089-06:00  INFO 5904 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-11-04T18:58:45.631-06:00  INFO 5904 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-04T18:58:45.644-06:00  INFO 5904 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-04T18:58:45.644-06:00  INFO 5904 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-04T18:58:45.693-06:00  INFO 5904 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-04T18:58:45.693-06:00  INFO 5904 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1262 ms
+2025-11-04T18:58:45.895-06:00  INFO 5904 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-04T18:58:46.044-06:00  INFO 5904 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f2224d71-b817-47f4-a4c0-df76c2b8675f user=SA
+2025-11-04T18:58:46.045-06:00  INFO 5904 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-04T18:58:46.091-06:00  INFO 5904 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-04T18:58:46.135-06:00  INFO 5904 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-04T18:58:46.164-06:00  INFO 5904 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-04T18:58:46.386-06:00  INFO 5904 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-04T18:58:46.439-06:00  INFO 5904 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-04T18:58:46.982-06:00  INFO 5904 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-04T18:58:47.021-06:00  INFO 5904 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-04T18:58:47.343-06:00  WARN 5904 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04T18:58:47.883-06:00  INFO 5904 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-04T18:58:47.945-06:00  INFO 5904 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-04T18:58:47.955-06:00  INFO 5904 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 3.911 seconds (process running for 4.227)
+2025-11-19T14:51:01.562-06:00  INFO 10488 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 10488 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T14:51:01.564-06:00  INFO 10488 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:51:02.226-06:00  INFO 10488 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:51:02.272-06:00  INFO 10488 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:51:02.846-06:00  INFO 10488 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T14:51:02.856-06:00  INFO 10488 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T14:51:02.856-06:00  INFO 10488 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T14:51:02.907-06:00  INFO 10488 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T14:51:02.907-06:00  INFO 10488 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1313 ms
+2025-11-19T14:51:03.131-06:00  INFO 10488 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T14:51:03.266-06:00  INFO 10488 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:61a424b2-d8c4-4b0f-aa2d-168c3749aad3 user=SA
+2025-11-19T14:51:03.267-06:00  INFO 10488 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T14:51:03.310-06:00  INFO 10488 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:51:03.353-06:00  INFO 10488 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T14:51:03.382-06:00  INFO 10488 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T14:51:03.604-06:00  INFO 10488 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:51:03.665-06:00  INFO 10488 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:51:04.242-06:00  INFO 10488 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:51:04.275-06:00  INFO 10488 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:51:04.585-06:00  WARN 10488 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:51:04.728-06:00  WARN 10488 --- [project] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invalid mapping on handler class [com.baylor.app.controller.LocationController]: public org.springframework.http.ResponseEntity com.baylor.app.controller.LocationController.getItemsByLocation(java.lang.String)
+2025-11-19T14:51:04.729-06:00  INFO 10488 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:51:04.733-06:00  INFO 10488 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-19T14:51:04.735-06:00  INFO 10488 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-19T14:51:04.736-06:00  INFO 10488 --- [project] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-19T14:51:04.749-06:00  INFO 10488 --- [project] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-19T14:51:04.760-06:00 ERROR 10488 --- [project] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected:
+/{locationId}/items}
+                   ^
+Missing preceding open capture character before variable name{
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
+2025-11-19T14:51:56.050-06:00  INFO 21516 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 21516 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T14:51:56.052-06:00  INFO 21516 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:51:56.742-06:00  INFO 21516 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:51:56.799-06:00  INFO 21516 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:51:57.419-06:00  INFO 21516 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T14:51:57.431-06:00  INFO 21516 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T14:51:57.431-06:00  INFO 21516 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T14:51:57.477-06:00  INFO 21516 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T14:51:57.478-06:00  INFO 21516 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1392 ms
+2025-11-19T14:51:57.675-06:00  INFO 21516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T14:51:57.808-06:00  INFO 21516 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a6d39788-c7d5-4ed1-a5d4-a2390a0919ce user=SA
+2025-11-19T14:51:57.811-06:00  INFO 21516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T14:51:57.864-06:00  INFO 21516 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:51:57.911-06:00  INFO 21516 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T14:51:57.942-06:00  INFO 21516 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T14:51:58.171-06:00  INFO 21516 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:51:58.230-06:00  INFO 21516 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:51:58.865-06:00  INFO 21516 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:51:58.905-06:00  INFO 21516 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:51:59.219-06:00  WARN 21516 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:51:59.368-06:00  WARN 21516 --- [project] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invalid mapping on handler class [com.baylor.app.controller.LocationController]: public org.springframework.http.ResponseEntity com.baylor.app.controller.LocationController.getItemsByLocation(java.lang.String)
+2025-11-19T14:51:59.369-06:00  INFO 21516 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:51:59.372-06:00  INFO 21516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-19T14:51:59.374-06:00  INFO 21516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-19T14:51:59.375-06:00  INFO 21516 --- [project] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-19T14:51:59.386-06:00  INFO 21516 --- [project] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-19T14:51:59.398-06:00 ERROR 21516 --- [project] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid mapping pattern detected:
+/items/{locationId}}
+                   ^
+Missing preceding open capture character before variable name{
+
+Action:
+
+Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
+
+2025-11-19T14:52:27.288-06:00  INFO 20516 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 20516 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T14:52:27.290-06:00  INFO 20516 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:52:27.920-06:00  INFO 20516 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:52:27.967-06:00  INFO 20516 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:52:28.537-06:00  INFO 20516 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T14:52:28.547-06:00  INFO 20516 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T14:52:28.547-06:00  INFO 20516 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T14:52:28.592-06:00  INFO 20516 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T14:52:28.592-06:00  INFO 20516 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1273 ms
+2025-11-19T14:52:28.786-06:00  INFO 20516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T14:52:28.970-06:00  INFO 20516 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e32bbe5f-72fd-4e72-a737-19d27178331e user=SA
+2025-11-19T14:52:28.973-06:00  INFO 20516 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T14:52:29.029-06:00  INFO 20516 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:52:29.079-06:00  INFO 20516 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T14:52:29.109-06:00  INFO 20516 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T14:52:29.378-06:00  INFO 20516 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:52:29.503-06:00  INFO 20516 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:52:30.329-06:00  INFO 20516 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:52:30.363-06:00  INFO 20516 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:52:30.660-06:00  WARN 20516 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:52:31.172-06:00  INFO 20516 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T14:52:31.244-06:00  INFO 20516 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T14:52:31.256-06:00  INFO 20516 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 4.37 seconds (process running for 4.751)
+2025-11-19T14:58:59.708-06:00  INFO 8904 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 8904 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T14:58:59.710-06:00  INFO 8904 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T14:59:00.315-06:00  INFO 8904 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T14:59:00.355-06:00  INFO 8904 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2025-11-19T14:59:00.866-06:00  INFO 8904 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T14:59:00.875-06:00  INFO 8904 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T14:59:00.875-06:00  INFO 8904 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T14:59:00.921-06:00  INFO 8904 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T14:59:00.921-06:00  INFO 8904 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1182 ms
+2025-11-19T14:59:01.100-06:00  INFO 8904 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T14:59:01.228-06:00  INFO 8904 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f38deba4-f57b-48b5-91ed-699063f6034f user=SA
+2025-11-19T14:59:01.230-06:00  INFO 8904 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T14:59:01.271-06:00  INFO 8904 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T14:59:01.320-06:00  INFO 8904 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T14:59:01.346-06:00  INFO 8904 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T14:59:01.558-06:00  INFO 8904 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T14:59:01.614-06:00  INFO 8904 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T14:59:02.137-06:00  INFO 8904 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T14:59:02.168-06:00  INFO 8904 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T14:59:02.449-06:00  WARN 8904 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T14:59:02.916-06:00  INFO 8904 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T14:59:02.974-06:00  INFO 8904 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T14:59:02.984-06:00  INFO 8904 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 3.606 seconds (process running for 3.878)
+2025-11-19T15:22:50.354-06:00  INFO 1704 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 1704 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T15:22:50.356-06:00  INFO 1704 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T15:22:50.953-06:00  INFO 1704 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T15:22:50.989-06:00  INFO 1704 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2025-11-19T15:22:51.505-06:00  INFO 1704 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T15:22:51.513-06:00  INFO 1704 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T15:22:51.513-06:00  INFO 1704 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T15:22:51.550-06:00  INFO 1704 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T15:22:51.551-06:00  INFO 1704 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1166 ms
+2025-11-19T15:22:51.732-06:00  INFO 1704 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T15:22:51.853-06:00  INFO 1704 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:71b98ab0-810b-45ec-9cfa-aef0bfde6cd9 user=SA
+2025-11-19T15:22:51.855-06:00  INFO 1704 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T15:22:51.893-06:00  INFO 1704 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T15:22:51.930-06:00  INFO 1704 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T15:22:51.957-06:00  INFO 1704 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T15:22:52.154-06:00  INFO 1704 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T15:22:52.206-06:00  INFO 1704 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T15:22:52.717-06:00  INFO 1704 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T15:22:52.746-06:00  INFO 1704 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T15:22:53.022-06:00  WARN 1704 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T15:22:53.465-06:00  INFO 1704 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T15:22:53.516-06:00  INFO 1704 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T15:22:53.524-06:00  INFO 1704 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 3.517 seconds (process running for 3.783)
+2025-11-19T15:25:17.080-06:00  INFO 1704 --- [project] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T15:25:17.080-06:00  INFO 1704 --- [project] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-19T15:25:17.081-06:00  INFO 1704 --- [project] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-19T15:25:26.738-06:00  WARN 1704 --- [project] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-11-19T15:39:49.238-06:00  INFO 14268 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 14268 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T15:39:49.239-06:00  INFO 14268 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T15:39:49.840-06:00  INFO 14268 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T15:39:49.878-06:00  INFO 14268 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2025-11-19T15:39:50.388-06:00  INFO 14268 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T15:39:50.398-06:00  INFO 14268 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T15:39:50.398-06:00  INFO 14268 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T15:39:50.444-06:00  INFO 14268 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T15:39:50.444-06:00  INFO 14268 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1176 ms
+2025-11-19T15:39:50.626-06:00  INFO 14268 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T15:39:50.750-06:00  INFO 14268 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:50bacc42-f452-4a72-b86c-55103b34b6cc user=SA
+2025-11-19T15:39:50.752-06:00  INFO 14268 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T15:39:50.794-06:00  INFO 14268 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T15:39:50.834-06:00  INFO 14268 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T15:39:50.862-06:00  INFO 14268 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T15:39:51.062-06:00  INFO 14268 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T15:39:51.115-06:00  INFO 14268 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T15:39:51.655-06:00  INFO 14268 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T15:39:51.685-06:00  INFO 14268 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T15:39:51.944-06:00  WARN 14268 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T15:39:52.406-06:00  INFO 14268 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T15:39:52.455-06:00  INFO 14268 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T15:39:52.463-06:00  INFO 14268 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 3.551 seconds (process running for 3.836)
+2025-11-19T15:39:58.452-06:00  INFO 14268 --- [project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T15:39:58.452-06:00  INFO 14268 --- [project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-19T15:39:58.453-06:00  INFO 14268 --- [project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-19T15:40:26.432-06:00  INFO 22216 --- [project] [main] com.baylor.app.InventoryApp              : Starting InventoryApp using Java 21.0.8 with PID 22216 (C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem\target\classes started by Agent Argon in C:\Users\Agent Argon\Documents\Books\ASE\ASEWorkSpace\CSI5354-InventoryManagementSystem)
+2025-11-19T15:40:26.433-06:00  INFO 22216 --- [project] [main] com.baylor.app.InventoryApp              : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T15:40:27.024-06:00  INFO 22216 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T15:40:27.064-06:00  INFO 22216 --- [project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2025-11-19T15:40:27.557-06:00  INFO 22216 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-19T15:40:27.567-06:00  INFO 22216 --- [project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-19T15:40:27.567-06:00  INFO 22216 --- [project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-19T15:40:27.611-06:00  INFO 22216 --- [project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-19T15:40:27.611-06:00  INFO 22216 --- [project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1150 ms
+2025-11-19T15:40:27.783-06:00  INFO 22216 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-19T15:40:27.906-06:00  INFO 22216 --- [project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:8b731892-5884-4773-911a-0604b7db3cd4 user=SA
+2025-11-19T15:40:27.907-06:00  INFO 22216 --- [project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-19T15:40:27.949-06:00  INFO 22216 --- [project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19T15:40:27.994-06:00  INFO 22216 --- [project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-11-19T15:40:28.023-06:00  INFO 22216 --- [project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-19T15:40:28.217-06:00  INFO 22216 --- [project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T15:40:28.273-06:00  INFO 22216 --- [project] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-19T15:40:28.797-06:00  INFO 22216 --- [project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19T15:40:28.827-06:00  INFO 22216 --- [project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T15:40:29.095-06:00  WARN 22216 --- [project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19T15:40:29.543-06:00  INFO 22216 --- [project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T15:40:29.592-06:00  INFO 22216 --- [project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T15:40:29.601-06:00  INFO 22216 --- [project] [main] com.baylor.app.InventoryApp              : Started InventoryApp in 3.55 seconds (process running for 3.821)
+2025-11-19T15:40:32.685-06:00  INFO 22216 --- [project] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T15:40:32.685-06:00  INFO 22216 --- [project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-19T15:40:32.686-06:00  INFO 22216 --- [project] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

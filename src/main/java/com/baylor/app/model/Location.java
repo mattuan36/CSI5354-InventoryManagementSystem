@@ -17,10 +17,5 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long room;
-    private Long shelf;
-    private Long container;
-
-    @OneToMany(mappedBy = "location")
-    private List<Item> items;
+    private String description;
 }

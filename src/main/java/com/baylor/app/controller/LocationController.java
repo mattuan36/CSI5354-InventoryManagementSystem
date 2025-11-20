@@ -1,5 +1,6 @@
 package com.baylor.app.controller;
 
+import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
 import com.baylor.app.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,13 @@ public class LocationController {
     public ResponseEntity<Location> getLocation(@PathVariable("locationId") String locationId) {
         Location location = locationService.getLocation(locationId);
         return new ResponseEntity<>(location, HttpStatus.OK);
+    }
+
+    // method for demonstrating the composite pattern.
+    @RequestMapping(value = "/{locationId}/items", method = RequestMethod.GET)
+    public ResponseEntity<List<Item>> getItemsByLocation(@PathVariable("locationId") String locationId) {
+        Location location = locationService.getLocation(locationId);
+        return new ResponseEntity<>(locationService.getItemsByLocation(location), HttpStatus.OK);
     }
 
     @PutMapping(value="/{locationId}")
