@@ -1,7 +1,5 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Mediator;
-import com.baylor.app.mediator.VendorLocationMediator;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
 import com.baylor.app.repository.LocationRepository;
@@ -18,9 +16,6 @@ public class LocationService {
 
     @Autowired
     private LocationRepository locationRepository;
-
-    @Autowired
-    private VendorLocationMediator mediator;
 
     public Location getLocation(String locationId) {
         Optional<Location> location = locationRepository.findById(locationId);

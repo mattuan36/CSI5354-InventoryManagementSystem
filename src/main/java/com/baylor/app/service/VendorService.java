@@ -60,8 +60,8 @@ public class VendorService{
         return responseMessage;
     }
 
-    public Long checkAvailableSpace(String locationId){
-        return mediator.checkAvailableSpace(locationId);
+    public Long getAvailableSpace(String locationId){
+        return mediator.getAvailableSpace(locationId);
     }
 
     public String reserveLocation(String vendorId, String locationId) {

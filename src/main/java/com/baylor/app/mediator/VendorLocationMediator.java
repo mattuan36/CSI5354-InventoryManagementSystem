@@ -15,11 +15,9 @@ import java.util.List;
 public class VendorLocationMediator implements Mediator {
 
     @Autowired
-    private VendorService vendorService;
-    @Autowired
     private LocationService locationService;
 
-    public Long checkAvailableSpace(String locationId){
+    public Long getAvailableSpace(String locationId){
         return locationService.getAvailableSpace(locationId);
     }
 
