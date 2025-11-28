@@ -20,6 +20,9 @@ public class Location {
     private Long room;
     private Long shelf;
     private Long container;
+    @Column(columnDefinition = "integer default 10")
+    private Long availableSpace;
+    private String reserved = "null";
 
     @OneToMany(mappedBy = "location")
     private List<Item> items;

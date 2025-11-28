@@ -1,10 +1,11 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Comp;
 import com.baylor.app.mediator.Mediator;
+import com.baylor.app.mediator.VendorLocationMediator;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
 import com.baylor.app.repository.LocationRepository;
+import com.baylor.app.repository.VendorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,16 +14,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class LocationService implements Comp {
+public class LocationService {
 
     @Autowired
     private LocationRepository locationRepository;
 
-    private Mediator mediator;
-
-    public void setMediator(Mediator mediator) {
-        this.mediator = mediator;
-    }
+    @Autowired
+    private VendorLocationMediator mediator;
 
     public Location getLocation(String locationId) {
         Optional<Location> location = locationRepository.findById(locationId);
@@ -57,6 +55,32 @@ public class LocationService implements Comp {
         locationRepository.deleteById(locationId);
         responseMessage = String.format("Vendor: %s Deleted Successfully", locationId);
         return responseMessage;
+    }
+
+    public Boolean isFull(String locationId) {
+        Location location = getLocation(locationId);
+        return location.getAvailableSpace() > 0;
+    }
+
+    public Long getAvailableSpace(String locationId) {
+        Location location = getLocation(locationId);
+        return location.getAvailableSpace();
+    }
+
+    public Boolean isReserved(String vendorId, String locationId) {
+        Location location = getLocation(locationId);
+        return location.getReserved().equals(vendorId);
+    }
+
+    public String reserveLocation(String vendorId, String locationId) {
+        if (isReserved(vendorId, locationId)) {
+            return "Already Reserved";
+        }else{
+            Location location = getLocation(locationId);
+            location.setReserved(locationId);
+            locationRepository.save(location);
+            return "Reserved";
+        }
     }
 
 }
