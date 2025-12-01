@@ -1,7 +1,5 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Mediator;
-import com.baylor.app.mediator.VendorLocationMediator;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Vendor;
 import com.baylor.app.repository.VendorRepository;
@@ -17,9 +15,6 @@ public class VendorService{
 
     @Autowired
     private VendorRepository vendorRepository;
-
-    @Autowired
-    private VendorLocationMediator mediator;
 
     public Vendor getVendor(String vendorId) {
         Optional<Vendor> vendor = vendorRepository.findById(vendorId);
@@ -61,12 +56,11 @@ public class VendorService{
     }
 
     public Long getAvailableSpace(String locationId){
-        return mediator.getAvailableSpace(locationId);
+        return 0L;
     }
 
     public String reserveLocation(String vendorId, String locationId) {
-        String responseMessage = null;
-        return mediator.reserveLocation(locationId, vendorId);
+        return "Blank";
     }
 
 }
