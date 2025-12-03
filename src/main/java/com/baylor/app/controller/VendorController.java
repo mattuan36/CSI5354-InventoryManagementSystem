@@ -42,16 +42,4 @@ public class VendorController {
     public ResponseEntity<String> deleteVendor(@PathVariable("vendorId") String vendorId) {
         return new ResponseEntity<>(vendorService.deleteVendor(vendorId), HttpStatus.OK);
     }
-
-    @RequestMapping(value = "/{vendorId}/reserveLocation/{locationId}", method = RequestMethod.GET)
-    public ResponseEntity<String> reserveLocation(@PathVariable("vendorId") String vendorId,@PathVariable("locationId") String locationId) {
-        String reservationStatus = vendorService.reserveLocation(vendorId, locationId);
-        return new ResponseEntity<>(reservationStatus, HttpStatus.OK);
-    }
-
-    @RequestMapping(value = "/locationAvailability/{locationId}", method = RequestMethod.GET)
-    public ResponseEntity<Long> getLocationAvailability(@PathVariable("locationId") String locationId) {
-        Long availableSpace = vendorService.getAvailableSpace(locationId);
-        return new ResponseEntity<>(availableSpace, HttpStatus.OK);
-    }
 }

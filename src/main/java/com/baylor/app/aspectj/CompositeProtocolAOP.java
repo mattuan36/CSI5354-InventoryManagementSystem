@@ -2,6 +2,7 @@ package com.baylor.app.aspectj;
 
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.DeclareParents;
@@ -41,17 +42,14 @@ public class CompositeProtocolAOP {
         }
     }
 
-    @DeclareParents(value = "com.baylor.app.model.Location", defaultImpl = Composite.class)
+    @DeclareParents(value = "com.baylor.app.model.Location+", defaultImpl = Composite.class)
     public Component composite;
 
-    @DeclareParents(value = "com.baylor.app.model.Item", defaultImpl = Leaf.class)
+    @DeclareParents(value = "com.baylor.app.model.Item+", defaultImpl = Leaf.class)
     public Component leaf;
 
-    @Pointcut("execution(* *..LocationService.getItemsByLocation(..)) && args(location)")
-    private void getItems(Location location) {}
-
-    @Around("getItems(location)")
-    public List<Item> around(Location location) {
+    @Around("execution(* *..LocationService.getItemsByLocation(..)) && args(location)")
+    public List<Item> around(ProceedingJoinPoint pjp, Location location) {
         Component root = (Component) location;
         return root.getItems();
     }

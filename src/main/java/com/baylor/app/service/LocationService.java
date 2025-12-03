@@ -24,6 +24,7 @@ public class LocationService {
 
     // method that uses the composite pattern to return all items in a given location.
     public List<Item> getItemsByLocation(Location location) {
+        System.out.println("RUH ROH");
         return null; // will be replaced by AspectJ behavior
     }
   

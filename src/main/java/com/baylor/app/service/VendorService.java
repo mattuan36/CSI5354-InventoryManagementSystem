@@ -1,8 +1,5 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Mediator;
-import com.baylor.app.mediator.VendorLocationMediator;
-import com.baylor.app.model.Item;
 import com.baylor.app.model.Vendor;
 import com.baylor.app.repository.VendorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
