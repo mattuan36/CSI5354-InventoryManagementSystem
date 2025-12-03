@@ -8,9 +8,6 @@ import lombok.ToString;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
-@ToString
 @Entity
 @Table(name = "location")
 public class Location implements Component {
@@ -33,5 +30,21 @@ public class Location implements Component {
             items.addAll(component.getItems());
         }
         return items;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
