@@ -78,33 +78,22 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>aspectj-maven-plugin</artifactId>
             <version>1.15.0</version>
-
             <configuration>
                 <complianceLevel>16</complianceLevel>
                 <source>16</source>
                 <target>16</target>
-
-                <!-- IMPORTANT: disable annotation processing inside AJC -->
                 <proc>none</proc>
-
-                <!-- Only binary weave -->
                 <weaveDirectories>
                     <weaveDirectory>${project.build.outputDirectory}</weaveDirectory>
                 </weaveDirectories>
-
-                <!-- Location of .aj file(s) -->
                 <aspectDirectory>src/main/aspect</aspectDirectory>
-
-                <!-- Allow weaving of compiled classes -->
                 <includes>
                     <include>**/*.class</include>
                     <include>**/*.aj</include>
                 </includes>
-
                 <showWeaveInfo>true</showWeaveInfo>
                 <verbose>true</verbose>
             </configuration>
-
             <executions>
                 <execution>
                     <goals>
@@ -114,9 +103,6 @@
                 </execution>
             </executions>
         </plugin>
-
-
     </plugins>
   </build>
-
 </project>
