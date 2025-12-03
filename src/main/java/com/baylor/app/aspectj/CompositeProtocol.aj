@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
-import com.baylor.app.service.LocationService
+import com.baylor.app.service.LocationService;
 
 public aspect CompositeProtocol {
 
