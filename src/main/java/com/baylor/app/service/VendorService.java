@@ -15,11 +15,15 @@ import java.util.Optional;
 @Service
 public class VendorService{
 
+    Mediator mediator;
+
     @Autowired
     private VendorRepository vendorRepository;
 
     @Autowired
-    private VendorLocationMediator mediator;
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
 
     public Vendor getVendor(String vendorId) {
         Optional<Vendor> vendor = vendorRepository.findById(vendorId);
