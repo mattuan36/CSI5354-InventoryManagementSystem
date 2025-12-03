@@ -15,15 +15,8 @@ import java.util.Optional;
 @Service
 public class VendorService{
 
-    Mediator mediator;
-
     @Autowired
     private VendorRepository vendorRepository;
-
-    @Autowired
-    public void setMediator(Mediator mediator) {
-        this.mediator = mediator;
-    }
 
     public Vendor getVendor(String vendorId) {
         Optional<Vendor> vendor = vendorRepository.findById(vendorId);
@@ -62,15 +55,6 @@ public class VendorService{
         vendorRepository.deleteById(vendorId);
         responseMessage = String.format("Vendor: %s Deleted Successfully", vendorId);
         return responseMessage;
-    }
-
-    public Long getAvailableSpace(String locationId){
-        return mediator.getAvailableSpace(locationId);
-    }
-
-    public String reserveLocation(String vendorId, String locationId) {
-        String responseMessage = null;
-        return mediator.reserveLocation(locationId, vendorId);
     }
 
 }

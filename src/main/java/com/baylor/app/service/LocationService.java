@@ -55,30 +55,4 @@ public class LocationService {
         return responseMessage;
     }
 
-    public Boolean isFull(String locationId) {
-        Location location = getLocation(locationId);
-        return location.getAvailableSpace() > 0;
-    }
-
-    public Long getAvailableSpace(String locationId) {
-        Location location = getLocation(locationId);
-        return location.getAvailableSpace();
-    }
-
-    public Boolean isReserved(String vendorId, String locationId) {
-        Location location = getLocation(locationId);
-        return location.getReserved().equals(vendorId);
-    }
-
-    public String reserveLocation(String vendorId, String locationId) {
-        if (isReserved(vendorId, locationId)) {
-            return "Already Reserved";
-        }else{
-            Location location = getLocation(locationId);
-            location.setReserved(locationId);
-            locationRepository.save(location);
-            return "Reserved";
-        }
-    }
-
 }

@@ -7,9 +7,6 @@ import lombok.ToString;
 
 import java.util.List;
 
-@Getter
-@Setter
-@ToString
 @Entity
 @Table(name = "location")
 public class Location {
@@ -17,13 +14,22 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long room;
-    private Long shelf;
-    private Long container;
-    @Column(columnDefinition = "integer default 10")
-    private Long availableSpace;
-    private String reserved = "null";
+    private String description;
 
-    @OneToMany(mappedBy = "location")
-    private List<Item> items;
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
 }
