@@ -1,7 +1,5 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Comp;
-import com.baylor.app.mediator.Mediator;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
 import com.baylor.app.repository.ItemRepository;
@@ -15,17 +13,10 @@ import java.util.Optional;
 import static java.util.stream.Collectors.toList;
 
 @Service
-public class ItemService implements Comp{
+public class ItemService {
 
     @Autowired
     private ItemRepository itemRepository;
-
-    private Mediator mediator;
-
-    @Override
-    public void setMediator(Mediator mediator) {
-        this.mediator = mediator;
-    }
 
     public Item getItem(String itemId) {
         Optional<Item> item = itemRepository.findById(itemId);

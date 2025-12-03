@@ -47,6 +47,7 @@ public aspect CompositeProtocol {
         && args(location);
 
     List<Item> around(Location location) : execute(location) {
+        System.out.println("RUH ROH");
         Component root = (Component) location;
         return root.getItems();
     }
