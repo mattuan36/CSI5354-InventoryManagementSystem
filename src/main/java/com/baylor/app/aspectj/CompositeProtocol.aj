@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Location;
-import com.baylor.app.service.LocationService;
+import jakarta.persistence.*;
 
 public aspect CompositeProtocol {
 
     // create the roles
-	protected interface Component {}
+    protected interface Component {}
 	protected interface Composite extends Component {}
 	protected interface Leaf extends Component {}
 
@@ -18,6 +18,7 @@ public aspect CompositeProtocol {
 	declare parents: Item implements Leaf;
 
     // store children hierarchy
+    @Transient
     private List<Component> Composite.children = new ArrayList<>();
 
     // Composite base methods
