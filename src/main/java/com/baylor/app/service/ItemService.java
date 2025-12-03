@@ -11,8 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static java.util.stream.Collectors.toList;
-
 @Service
 public class ItemService{
 
@@ -26,7 +24,6 @@ public class ItemService{
 
     public List<Item> getItemByName(String name) {
         return itemRepository.findByName(name);
-
     }
 
     public List<Item> getAllItems() {

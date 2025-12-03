@@ -22,6 +22,11 @@ public class LocationService {
         return location.orElseThrow(() -> new IllegalArgumentException("Location Not Found"));
     }
 
+    // method that uses the composite pattern to return all items in a given location.
+    public List<Item> getItemsByLocation(Location location) {
+        return null; // will be replaced by AspectJ behavior
+    }
+  
     public List<Location> getAllLocations() {
         List<Location> locations = new ArrayList<>();
         locationRepository.findAll().forEach(locations::add);
@@ -31,9 +36,7 @@ public class LocationService {
     public Location updateLocation(String locationId, Location location) {
         Location locationToUpdate = getLocation(locationId);
 
-        locationToUpdate.setRoom(location.getRoom());
-        locationToUpdate.setShelf(location.getShelf());
-        locationToUpdate.setContainer(location.getContainer());
+        locationToUpdate.setDescription(location.getDescription());
         locationRepository.save(locationToUpdate);
 
         return locationToUpdate;

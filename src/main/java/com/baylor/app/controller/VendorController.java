@@ -1,7 +1,6 @@
 package com.baylor.app.controller;
 
 import com.baylor.app.model.Vendor;
-import com.baylor.app.model.Vendor;
 import com.baylor.app.service.VendorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
