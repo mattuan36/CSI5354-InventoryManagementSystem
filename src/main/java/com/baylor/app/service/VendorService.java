@@ -1,7 +1,5 @@
 package com.baylor.app.service;
 
-import com.baylor.app.mediator.Comp;
-import com.baylor.app.mediator.Mediator;
 import com.baylor.app.model.Item;
 import com.baylor.app.model.Vendor;
 import com.baylor.app.repository.VendorRepository;
@@ -13,17 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class VendorService implements Comp {
+public class VendorService {
 
     @Autowired
     private VendorRepository vendorRepository;
-
-    private Mediator mediator;
-
-    @Override
-    public void setMediator(Mediator mediator) {
-        this.mediator = mediator;
-    }
 
     public Vendor getVendor(String vendorId) {
         Optional<Vendor> vendor = vendorRepository.findById(vendorId);
