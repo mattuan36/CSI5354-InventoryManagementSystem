@@ -43,7 +43,7 @@ public class ItemService implements Comp{
     }
 
     public List<Item> getItemByVendor(String vendor) {
-        return itemRepository.findByVendor(vendor);
+        return itemRepository.findByVendorName(vendor);
     }
 
     public Item updateItem(String itemId, Item item) {

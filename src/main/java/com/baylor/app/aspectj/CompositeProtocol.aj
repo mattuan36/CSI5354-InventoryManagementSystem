@@ -42,7 +42,7 @@ public aspect CompositeProtocol {
 
     // the pointcut to be replaced and the logic to be used
     pointcut execute(Location location) :
-        execution(List LocationService.getItemsByLocation(Location))
+        execution(java.util.List<com.baylor.app.model.Item> com.baylor.app.service.LocationService.getItemsByLocation(com.baylor.app.model.Location))
         && args(location);
 
     List<Item> around(Location location) : execute(location) {

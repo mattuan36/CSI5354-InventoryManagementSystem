@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface VendorRepository extends CrudRepository<Vendor, String> {
+public interface VendorRepository extends CrudRepository<Vendor, Long> {
     public List<Vendor> findByName(String name);
 }

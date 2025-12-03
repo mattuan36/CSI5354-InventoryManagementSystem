@@ -17,7 +17,7 @@ public class VendorController {
     private VendorService vendorService;
 
     @RequestMapping(value = "/{vendorId}", method = RequestMethod.GET)
-    public ResponseEntity<Vendor> getVendor(@PathVariable("vendorId") String vendorId) {
+    public ResponseEntity<Vendor> getVendor(@PathVariable("vendorId") Long vendorId) {
         Vendor vendor = vendorService.getVendor(vendorId);
         return new ResponseEntity<>(vendor, HttpStatus.OK);
     }
@@ -29,7 +29,7 @@ public class VendorController {
     }
 
     @PutMapping(value="/{vendorId}")
-    public ResponseEntity<Vendor> updateVendor(@PathVariable("vendorId") String vendorId, @RequestBody Vendor vendor) {
+    public ResponseEntity<Vendor> updateVendor(@PathVariable("vendorId") Long vendorId, @RequestBody Vendor vendor) {
         return new ResponseEntity<>(vendorService.updateVendor(vendorId, vendor), HttpStatus.OK);
     }
 
@@ -39,7 +39,7 @@ public class VendorController {
     }
 
     @DeleteMapping(value = "/{vendorId}")
-    public ResponseEntity<String> deleteVendor(@PathVariable("vendorId") String vendorId) {
+    public ResponseEntity<String> deleteVendor(@PathVariable("vendorId") Long vendorId) {
         return new ResponseEntity<>(vendorService.deleteVendor(vendorId), HttpStatus.OK);
     }
 }

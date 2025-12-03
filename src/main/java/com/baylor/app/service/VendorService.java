@@ -25,7 +25,7 @@ public class VendorService implements Comp {
         this.mediator = mediator;
     }
 
-    public Vendor getVendor(String vendorId) {
+    public Vendor getVendor(Long vendorId) {
         Optional<Vendor> vendor = vendorRepository.findById(vendorId);
         return vendor.orElseThrow(() -> new IllegalArgumentException("Vendor Not Found"));
     }
@@ -41,7 +41,7 @@ public class VendorService implements Comp {
         return vendors;
     }
 
-    public Vendor updateVendor(String vendorId, Vendor vendor) {
+    public Vendor updateVendor(Long vendorId, Vendor vendor) {
         Vendor vendorToUpdate = getVendor(vendorId);
 
         vendorToUpdate.setName(vendor.getName());
@@ -57,7 +57,7 @@ public class VendorService implements Comp {
         return vendor;
     }
 
-    public String deleteVendor(String vendorId) {
+    public String deleteVendor(Long vendorId) {
         String responseMessage = null;
         vendorRepository.deleteById(vendorId);
         responseMessage = String.format("Vendor: %s Deleted Successfully", vendorId);
